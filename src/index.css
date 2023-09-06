@@ -93,13 +93,10 @@ header {
 .header-text {
   margin-bottom: 2rem;
   color: white;
-  /* font-weight: 600; */
   font-family: 'Karla', sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   font-weight: bold;
-  /* grid-area: paragraph; */
-  /* margin-right: 60%; */
 }
 
 button.reserve {
@@ -113,19 +110,63 @@ button.reserve {
   background-color: var(--primary-yellow);
   font-weight: bold;
   font-family: 'Karla', sans-serif;
-  /* grid-area: button; */
 }
 
 main {
   grid: main;
 }
 
+section.highlights {
+  padding: 4rem 0;
+}
+
+section.highlights .dish-photo {
+  height: 12rem;
+  width: 20rem;
+}
+
+
+section.highlights .title-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15rem;
+}
+
+section.highlights .menu-button {
+  height: 2rem;
+  padding: 0 2rem;
+}
+
+section.highlights .dishes {
+  display: grid;
+  grid-template-columns: repeat(3, 20rem);
+  gap: 3rem;
+  justify-content: center;
+}
+
+section.highlights .dishes .dish {
+  background-color: rgb(183, 178, 178);
+}
+
+section.highlights .dishes .dish .dish-details {
+  margin: 0 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* section.highlights .order {
+  position: absolute;
+} */
+
+
+
+
 footer {
   grid-area: footer;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 3rem;
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   padding: 2rem;
 }
