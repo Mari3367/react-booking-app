@@ -1,10 +1,11 @@
 import React from 'react';
 import logo from '../assets/Logo.svg';
+import menuIcon from '../assets/icon-hamburger-menu.svg';
 
 export default function Nav() {
   return (
     <nav>
-      <img src={logo} alt='little lemon logo'/>
+      <img src={logo} alt='little lemon logo' className='logo'/>
       <ul>
         <li><a href='#'>Home</a></li>
         <li><a href='#'>About</a></li>
@@ -13,6 +14,7 @@ export default function Nav() {
         <li><a href='#'>Order Online</a></li>
         <li><a href='#'>Login</a></li>
       </ul>
+      <img src={menuIcon} alt='menu icon' className='mobile-menu'/>
     </nav>
   )
 }
