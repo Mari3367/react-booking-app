@@ -101,7 +101,7 @@ button.reserve {
   bottom: 2rem;
   left: 15rem;
   border: none;
-  border-radius: 0.7rem;
+  border-radius: 1rem;
   background-color: var(--primary-yellow);
   font-weight: bold;
   font-family: 'Karla', sans-serif;
@@ -117,22 +117,28 @@ section.highlights {
   justify-content: center;
 }
 
+
 section.highlights .dish-photo {
   height: 12rem;
   width: 20rem;
   object-fit: cover;
+
 }
 
 section.highlights .title-wrapper{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 0 15rem; */
 }
 
 section.highlights .menu-button {
-  height: 2rem;
+  height: 3rem;
   padding: 0 2rem;
+  background-color: var(--primary-yellow);
+  border: none;
+  border-radius: 0.7rem;
+  font-weight: bold;
+  font-family: 'Karla', sans-serif;
 }
 
 section.highlights .dishes {
@@ -143,8 +149,9 @@ section.highlights .dishes {
 }
 
 section.highlights .dishes .dish {
-  background-color: rgb(183, 178, 178);
+  background-color: var(--secondary-pale-gray);
   position: relative;
+  border-radius: 1rem;
 }
 
 section.highlights .dishes .dish .dish-details {
@@ -160,12 +167,30 @@ section.highlights .wrap-name-price {
 
 section.highlights .dish-description {
   margin-bottom: 4rem;
+  font-family: 'Karla', sans-serif;
+  color: var(--primary-green);
+  font-size: 1rem;
+}
+
+.wrap-name-price h5 {
+  font-size: 1.5rem;
+  font-family: 'Markazi Text', serif;
+  padding: 0;
+  margin: 0;
+}
+.wrap-name-price span {
+  font-weight: bold;
+  font-family: 'Karla', sans-serif;
+  color: var(--secondary-orange);
+
 }
 
 section.highlights .order {
   position: absolute;
   bottom: 1.5rem;
   font-weight: bold;
+  font-family: 'Karla', sans-serif;
+  font-size: 0.8rem;
 }
 
 footer {
@@ -232,6 +257,7 @@ footer ul {
   button.reserve {
     position: relative;
     left: 0;
+    margin-top: 1rem;
   }
 
   .header-image  {
@@ -248,6 +274,10 @@ footer ul {
     margin-bottom: 2rem;
   }
 
+  section.highlights .wrap-name-price {
+    margin-top: 1rem;
+  }
+
   section.highlights .dishes {
     grid-template-columns: repeat(1, 70%);
   }
@@ -258,9 +288,12 @@ footer ul {
     /* margin: 0 5rem; */
   }
 
+
   section.highlights .dish-photo {
     height: 17rem;
     width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
   }
 }
 
@@ -312,8 +345,15 @@ footer ul {
   }
 
   section.highlights .dish-photo {
-    height: 17rem;
+    height: 100%;
     width: 100%;
+    border-top-right-radius: 0;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
+  section.highlights .wrap-name-price {
+    margin-top: 2rem;
   }
 
 }
@@ -353,11 +393,16 @@ footer ul {
   section.highlights .dish {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+
   }
 
   section.highlights .dish-photo {
     height: 12rem;
     width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 0;
   }
 }
 
@@ -383,6 +428,9 @@ footer ul {
   }
   .header-text {
     font-size: 1.2rem;
+  }
+  section.highlights .title-wrapper {
+    margin-top: 3rem;
   }
 
 }
