@@ -14,28 +14,34 @@ export default function Highlights() {
           <div className='dish'>
             <img src={salad} alt='greek salad' className='dish-photo'/>
             <div className='dish-details'>
-              <h5>Greek salad</h5>
-              <span className='price'>$12.99</span>
+            <div className='wrap-name-price'>
+                <h5>Greek salad</h5>
+                <span className='price'>$12.99</span>
+              </div>
               <p className='dish-description'>The famous greek  salad of crispy lettuce, peppers, olives and our   Chicago style feta cheese, garnished with crunchy   garlic and rosemary croutons.</p>
-              <div className='order'>Order a delivery<img   className='bike-icon'/></div>
+              <div className='order'>Order a delivery<img className='bike-icon'/></div>
             </div>
           </div>
           <div className='dish'>
             <img src={bruchetta} alt='bruchetta' className='dish-photo'/>
             <div className='dish-details'>
-              <h5>Bruchetta</h5>
-              <span className='price'>$5.99</span>
+              <div className='wrap-name-price'>
+                <h5>Bruchetta</h5>
+                <span className='price'>$5.99</span>
+              </div>
               <p className='dish-description'>Our Bruschetta is   made from grilled bread that has been smeared with  garlic and seasoned with salt and olive oil.</p>
-              <div className='order'>Order a delivery<img   className='bike-icon'/></div>
+              <div className='order'>Order a delivery<img className='bike-icon'/></div>
             </div>
           </div>
           <div className='dish'>
             <img src={lemonDessert} alt='lemon dessert' className='dish-photo'/>
             <div className='dish-details'>
-              <h5>Lemon Dessert</h5>
-              <span className='price'>$5.00</span>
+            <div className='wrap-name-price'>
+                <h5>Lemon Dessert</h5>
+                <span className='price'>$5.00</span>
+              </div>
               <p className='dish-description'>This comes straight   from grandma’s recipe book, every last ingredient   has been sourced and is as authentic as can be  imagined.</p>
-              <div className='order'>Order a delivery<img   className='bike-icon'/></div>
+              <div className='order'>Order a delivery<img className='bike-icon'/></div>
             </div>
           </div>
         </div>
