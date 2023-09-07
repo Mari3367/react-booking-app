@@ -26,6 +26,7 @@ nav {
   justify-content: center;
 }
 
+
 nav ul {
   display: flex;
   list-style: none;
@@ -191,6 +192,15 @@ section.highlights .order {
   font-weight: bold;
   font-family: 'Karla', sans-serif;
   font-size: 0.8rem;
+  color: var(--secondary-dark-gray);
+}
+
+section.highlights .bike-icon {
+  position: absolute;
+  right: -25px;
+  font-size: 1rem;
+  bottom: -4px;
+  color: black;
 }
 
 footer {
@@ -198,7 +208,6 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 3rem;
-  /* position: absolute; */
   bottom: 0;
   padding: 2rem;
 }
@@ -227,6 +236,7 @@ footer ul {
     top: 0;
     left: 0;
   }
+
   nav ul {
     display: none;
   }
@@ -285,7 +295,6 @@ footer ul {
   section.highlights .dish {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    /* margin: 0 5rem; */
   }
 
 
@@ -393,7 +402,7 @@ footer ul {
   section.highlights .dish {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto 1fr;
 
   }
 
@@ -427,7 +436,7 @@ footer ul {
     font-size: 2rem;
   }
   .header-text {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
   }
   section.highlights .title-wrapper {
     margin-top: 3rem;

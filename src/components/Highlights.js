@@ -2,6 +2,7 @@ import React from 'react';
 import salad from '../assets/greek salad.jpg';
 import bruchetta from '../assets/bruchetta.png';
 import lemonDessert from '../assets/lemon dessert.jpg';
+import {MdDeliveryDining} from 'react-icons/md';
 
 export default function Highlights() {
   return (
@@ -19,7 +20,7 @@ export default function Highlights() {
                 <span className='price'>$12.99</span>
               </div>
               <p className='dish-description'>The famous greek  salad of crispy lettuce, peppers, olives and our   Chicago style feta cheese, garnished with crunchy   garlic and rosemary croutons.</p>
-              <div className='order'>Order a delivery<img className='bike-icon'/></div>
+              <div className='order'>Order a delivery<span className='bike-icon'><MdDeliveryDining /></span></div>
             </div>
           </div>
           <div className='dish'>
@@ -30,7 +31,7 @@ export default function Highlights() {
                 <span className='price'>$5.99</span>
               </div>
               <p className='dish-description'>Our Bruschetta is   made from grilled bread that has been smeared with  garlic and seasoned with salt and olive oil.</p>
-              <div className='order'>Order a delivery<img className='bike-icon'/></div>
+              <div className='order'>Order a delivery<span className='bike-icon'><MdDeliveryDining /></span></div>
             </div>
           </div>
           <div className='dish'>
@@ -40,8 +41,8 @@ export default function Highlights() {
                 <h5>Lemon Dessert</h5>
                 <span className='price'>$5.00</span>
               </div>
-              <p className='dish-description'>This comes straight   from grandma’s recipe book, every last ingredient   has been sourced and is as authentic as can be  imagined.</p>
-              <div className='order'>Order a delivery<img className='bike-icon'/></div>
+              <p className='dish-description'>This comes straight   from grandma's recipe book, every last ingredient   has been sourced and is as authentic as can be  imagined.</p>
+              <div className='order'>Order a delivery<span className='bike-icon'><MdDeliveryDining /></span></div>
             </div>
           </div>
         </div>
