@@ -245,6 +245,11 @@ section.highlights .bike-icon {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: var(--primary-green);
+}
+
+.review-text {
+  color: var(--primary-green);
 }
 
 .testimonials-box h2 {
@@ -271,6 +276,66 @@ section.highlights .bike-icon {
 
 .testimonials-box .rate-stars {
   color: var(--primary-yellow);
+}
+
+/*---Story---*/
+section.story {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 2.5rem;
+}
+
+section.story .story-text {
+  /* display: flex;
+  flex-direction: column;
+  align-items: start; */
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  grid-auto-columns: 64%;
+  justify-content: end;
+}
+
+section.story h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.story-paragraph {
+  width: 100%;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+.story-title {
+  font-size: 3rem;
+  font-family: 'Markazi Text', serif;
+  font-weight: lighter;
+  color: var(--primary-yellow);
+}
+
+.story-subtitle {
+  font-size: 2rem;
+  font-family: 'Markazi Text', serif;
+  font-weight: lighter;
+  color: var(--primary-green);
+}
+
+section.story .owners {
+  /* display: flex;
+  flex-direction: column; */
+  display: grid;
+  grid-template-columns: 64%;
+  justify-content: start;
+  gap: 1rem;
+}
+
+section.story .owners-photo {
+  /* height: 20rem; */
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
 }
 
 footer {
@@ -378,6 +443,15 @@ footer ul {
   }
 
   /*---Testimonials---*/
+  .testimonials-box .header {
+    justify-content: center;
+  }
+  .testimonials-box .header h2 {
+    font-size: 2rem;
+    margin: 0 2rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
   .testimonials-box .people {
     grid-template-columns: auto;
   }
@@ -450,10 +524,6 @@ footer ul {
   .testimonials-box .people {
     grid-template-columns: 1fr 1fr;
   }
-
-  /* .testimonials-box .customer {
-    width: 17rem;
-  } */
 
 }
 
