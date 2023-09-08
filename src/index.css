@@ -135,6 +135,12 @@ section.highlights .title-wrapper{
   align-items: center;
 }
 
+section.highlights .title-wrapper h2 {
+  font-family: 'Markazi Text', serif;
+  font-weight: lighter;
+  font-size: 2rem;
+}
+
 section.highlights .menu-button {
   height: 3rem;
   padding: 0 2rem;
@@ -211,16 +217,18 @@ section.highlights .bike-icon {
   background-color: var(--primary-green);
   display: grid;
   grid-template-rows: auto 1fr;
-  justify-items: center;
-  position: relative;
+  /* justify-items: center; */
+  justify-content: center;
   font-family: 'Karla', sans-serif;
 }
 
 .testimonials-box .people {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  display: grid;
+  justify-content: center;
   gap: 1.5rem;
-  margin-top: 6rem;
+  margin-top: 3rem;
   padding-bottom: 2.5rem;
 }
 
@@ -241,15 +249,20 @@ section.highlights .bike-icon {
 
 .testimonials-box h2 {
   color: white;
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  left: 18%;
+  left: 18%; */
   font-family: 'Markazi Text', serif;
   font-weight: lighter;
   font-size: 2.5rem;
   margin: 0;
   margin-top: 1rem;
 }
+
+.testimonials-box .header {
+  display: flex;
+}
+
 
 .testimonials-box .customer-photo {
   width: 100%;
@@ -336,6 +349,8 @@ footer ul {
     gap: 0;
   }
 
+  /*---Highlights---*/
+
   section.highlights .title-wrapper {
     flex-direction: column;
     margin-bottom: 2rem;
@@ -360,6 +375,15 @@ footer ul {
     width: 100%;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
+  }
+
+  /*---Testimonials---*/
+  .testimonials-box .people {
+    grid-template-columns: auto;
+  }
+
+  .testimonials-box .customer {
+    width: 13rem;
   }
 }
 
@@ -422,6 +446,15 @@ footer ul {
     margin-top: 2rem;
   }
 
+  /*---Testimonials---*/
+  .testimonials-box .people {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* .testimonials-box .customer {
+    width: 17rem;
+  } */
+
 }
 
 /*---Bigger Tablet---*/
@@ -470,6 +503,13 @@ footer ul {
     border-top-right-radius: 1rem;
     border-bottom-left-radius: 0;
   }
+
+  /*---Testimonials---*/
+
+  .testimonials-box .people {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
 }
 
 /*---Desktop---*/
@@ -549,6 +589,12 @@ footer ul {
   }
   section.highlights .title-wrapper {
     margin-top: 5rem;
+  }
+
+  /*---Testimonials---*/
+
+  .testimonials-box .customer {
+    width: 13rem;
   }
 
  }

@@ -38,10 +38,12 @@ const customers = [
 export default function Testimonials() {
   return (
     <section className='testimonials-box'>
-        <h2>What people say about us!</h2>
+        <div className='header'>
+            <h2>What people say about us!</h2>
+        </div>
         <div className='people'>
             {customers.map((customer) => {
-                return <div className='customer'>
+                return <div className='customer' key={customer.name}>
                             <div className='customer-pic-name'>
                               <img src={customer.image} alt={customer.name} className='customer-photo'/>
                               <h5>{customer.name}</h5>
