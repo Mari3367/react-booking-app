@@ -1,14 +1,14 @@
 import React from 'react';
-import imageFooter from '../assets/restaurant.jpg';
+import footerIcon from '../assets/logo-white.png';
 
 export default function Footer() {
   return (
     <footer>
       <div>
-        <img src={imageFooter} alt='restaurant' className='footer-image'/>
+        <img src={footerIcon} alt='restaurant' className='footer-image'/>
       </div>
       <div>
-        <h4>Doormat Navigation</h4>
+        <h4 className='footer-title'>Doormat Navigation</h4>
         <ul>
           <li><a href='#'>Home</a></li>
           <li><a href='#'>About</a></li>
@@ -19,7 +19,7 @@ export default function Footer() {
         </ul>
       </div>
       <div>
-        <h4>Contact</h4>
+        <h4 className='footer-title'>Contact</h4>
         <ul>
           <li><a href='#'>Address</a></li>
           <li><a href='#'>phone number</a></li>
@@ -27,7 +27,7 @@ export default function Footer() {
         </ul>
       </div>
      <div>
-        <h4>Social Media Links</h4>
+        <h4 className='footer-title'>Social Media Links</h4>
         <ul>
           <li><a href='#'>Address</a></li>
           <li><a href='#'>phone number</a></li>

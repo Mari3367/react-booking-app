@@ -217,14 +217,11 @@ section.highlights .bike-icon {
   background-color: var(--primary-green);
   display: grid;
   grid-template-rows: auto 1fr;
-  /* justify-items: center; */
   justify-content: center;
   font-family: 'Karla', sans-serif;
 }
 
 .testimonials-box .people {
-  /* display: flex; */
-  /* justify-content: space-between; */
   display: grid;
   justify-content: center;
   gap: 1.5rem;
@@ -254,9 +251,6 @@ section.highlights .bike-icon {
 
 .testimonials-box h2 {
   color: white;
-  /* position: absolute;
-  top: 0;
-  left: 18%; */
   font-family: 'Markazi Text', serif;
   font-weight: lighter;
   font-size: 2.5rem;
@@ -268,7 +262,6 @@ section.highlights .bike-icon {
   display: flex;
 }
 
-
 .testimonials-box .customer-photo {
   width: 100%;
   border-radius: 50%;
@@ -278,23 +271,15 @@ section.highlights .bike-icon {
   color: var(--primary-yellow);
 }
 
-/*---Story---*/
+/*---Our Story---*/
 section.story {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   justify-content: center;
   margin-top: 2rem;
-  gap: 2.5rem;
 }
 
 section.story .story-text {
-  /* display: flex;
-  flex-direction: column;
-  align-items: start; */
   display: grid;
-  grid-template-rows: auto auto 1fr;
-  grid-auto-columns: 64%;
-  justify-content: end;
 }
 
 section.story h2, h3 {
@@ -323,29 +308,29 @@ section.story h2, h3 {
 }
 
 section.story .owners {
-  /* display: flex;
-  flex-direction: column; */
   display: grid;
-  grid-template-columns: 64%;
-  justify-content: start;
-  gap: 1rem;
 }
 
 section.story .owners-photo {
-  /* height: 20rem; */
   width: 100%;
   object-fit: cover;
   border-radius: 1rem;
+  padding: 0;
+  margin: 0;
 }
+
+  /*---Footer---*/
 
 footer {
   grid-area: footer;
+  margin-top: 5rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 3rem;
+  justify-content: center;
   bottom: 0;
   padding: 2rem;
+  background-color: var(--primary-green);
 }
+
 
 .footer-image {
   height: 14rem;
@@ -362,6 +347,20 @@ footer ul {
   justify-content: center;
   list-style-type: none;
   padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+footer .footer-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+footer .footer-title, a {
+  color: white;
+  text-decoration: none;
 }
 
 /*---MOBILE---*/
@@ -408,11 +407,7 @@ footer ul {
   .header-image  {
     display: none;
   }
-  footer {
-    grid-template-columns: 1fr;
-    position: relative;
-    gap: 0;
-  }
+
 
   /*---Highlights---*/
 
@@ -459,6 +454,40 @@ footer ul {
   .testimonials-box .customer {
     width: 13rem;
   }
+
+  /*---Our Story---*/
+  section.story {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    padding: 0 2.5rem;
+    gap: 0.5rem;
+  }
+  section.story .story-title, .story-subtitle {
+    text-align: center;
+  }
+  .story-title {
+    font-size: 2.5rem;
+  }
+  .story-subtitle {
+    font-size: 1.8rem;
+  }
+
+  section.story .story-text, section.story .owners{
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  section.story .owners {
+    gap: 1rem;
+  }
+
+  /*---Footer---*/
+
+  footer {
+    grid-template-columns: 1fr;
+    position: relative;
+    gap: 0;
+  }
+  
 }
 
 /*---TABLET---*/
@@ -525,9 +554,33 @@ footer ul {
     grid-template-columns: 1fr 1fr;
   }
 
+  /*---Our Story---*/
+  section.story {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    padding: 0 2.5rem;
+    gap: 0.5rem;
+  }
+
+  section.story .story-text, section.story .owners{
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  section.story .owners {
+    gap: 1rem;
+  }
+
+  /*---Footer---*/
+  footer {
+    grid-template-columns: repeat(4, 8rem);
+    gap: 1rem;
+
+  }
+
 }
 
-/*---Bigger Tablet---*/
+/*---Bigger Tablet/ Small Desktop---*/
 
 @media screen and (min-width:1015px) {
   nav ul {
@@ -580,6 +633,35 @@ footer ul {
     grid-template-columns: repeat(4, 1fr);
   }
 
+  /*---Our Story---*/
+  section.story {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    padding: 0;
+    margin-top: 5rem;
+  }
+
+  section.story .story-text {
+    grid-template-rows: auto auto 1fr;
+    grid-template-columns: 93%;
+    justify-content: end;
+  }
+
+  section.story .owners {
+    grid-template-columns: 93%;
+    justify-content: start;
+    gap: 1rem;
+  }
+
+  section.story .owners-photo {
+    height: 100%;
+  }
+
+  /*---Footer---*/
+  footer {
+    grid-template-columns: repeat(4, 13rem);
+  }
+
 }
 
 /*---Desktop---*/
@@ -605,10 +687,17 @@ footer ul {
   .header-text {
     font-size: 0.8rem;
   }
+  /*---Highlights/Specials---*/
   section.highlights .title-wrapper {
     margin-top: 3rem;
   }
-
+    /*---Our Story---*/
+    section.story .story-text {
+      grid-template-columns: 64%;
+    }
+    section.story .owners {
+      grid-template-columns: 64%;
+    }
 }
 
 /*---Bigger Desktop Screen---*/
@@ -649,6 +738,8 @@ footer ul {
     font-size: 1.2rem;
   }
 
+  /*---Highlights/Specials---*/
+
   section.highlights .dishes {
     grid-template-columns: repeat(3, 23rem);
   }
@@ -665,6 +756,35 @@ footer ul {
 
   .testimonials-box .customer {
     width: 13rem;
+  }
+
+  /*---Our Story---*/
+  section.story {
+    gap: 5rem;
+  }
+  section.story .story-text {
+    grid-template-columns: 56%;
+  }
+
+  section.story .owners {
+    grid-template-columns: 56%;
+  }
+
+  .story-title {
+    font-size: 4rem;
+  }
+
+  .story-subtitle {
+    font-size: 2.6rem;
+  }
+
+  .story-paragraph {
+    font-size: 1.3rem;
+  }
+
+  /*---Footer---*/
+  footer {
+    grid-template-columns: repeat(4, 17rem);
   }
 
  }
