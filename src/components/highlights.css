@@ -1,0 +1,193 @@
+section.highlights {
+    padding: 4rem 0;
+    display: grid;
+    justify-content: center;
+  }
+
+  section.highlights .dish-photo {
+    height: 12rem;
+    width: 20rem;
+    object-fit: cover;
+
+  }
+
+  section.highlights .title-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  section.highlights .title-wrapper h2 {
+    font-family: 'Markazi Text', serif;
+    font-weight: lighter;
+    font-size: 2rem;
+  }
+
+  section.highlights .menu-button {
+    height: 3rem;
+    padding: 0 2rem;
+    background-color: var(--primary-yellow);
+    border: none;
+    border-radius: 0.7rem;
+    font-weight: bold;
+    font-family: 'Karla', sans-serif;
+  }
+
+  section.highlights .dishes {
+    display: grid;
+    grid-template-columns: repeat(3, 20rem);
+    gap: 3rem;
+    justify-content: center;
+  }
+
+  section.highlights .dishes .dish {
+    background-color: var(--secondary-pale-gray);
+    position: relative;
+    border-radius: 1rem;
+  }
+
+  section.highlights .dishes .dish .dish-details {
+    margin: 0 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  section.highlights .wrap-name-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  section.highlights .dish-description {
+    margin-bottom: 4rem;
+    font-family: 'Karla', sans-serif;
+    color: var(--primary-green);
+    font-size: 1rem;
+  }
+
+  .wrap-name-price h5 {
+    font-size: 1.5rem;
+    font-family: 'Markazi Text', serif;
+    padding: 0;
+    margin: 0;
+  }
+  .wrap-name-price span {
+    font-weight: bold;
+    font-family: 'Karla', sans-serif;
+    color: var(--secondary-orange);
+  }
+
+  section.highlights .order {
+    position: absolute;
+    bottom: 1.5rem;
+    font-weight: bold;
+    font-family: 'Karla', sans-serif;
+    font-size: 0.8rem;
+    color: var(--secondary-dark-gray);
+  }
+
+  section.highlights .bike-icon {
+    position: absolute;
+    right: -25px;
+    font-size: 1rem;
+    bottom: -4px;
+    color: black;
+  }
+
+  /*---MOBILE---*/
+@media screen and (min-width:260px) and (max-width: 640px){
+    section.highlights .title-wrapper {
+        flex-direction: column;
+        margin-bottom: 2rem;
+      }
+
+      section.highlights .wrap-name-price {
+        margin-top: 1rem;
+      }
+
+      section.highlights .dishes {
+        grid-template-columns: repeat(1, 70%);
+      }
+
+      section.highlights .dish {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      section.highlights .dish-photo {
+        height: 17rem;
+        width: 100%;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+      }
+
+}
+
+/*---TABLET---*/
+@media screen and (min-width:641px) {
+    section.highlights .dishes {
+        grid-template-columns: repeat(1, 30rem);
+      }
+
+      section.highlights .dish {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      section.highlights .dish-photo {
+        height: 100%;
+        width: 100%;
+        border-top-right-radius: 0;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+      }
+
+      section.highlights .wrap-name-price {
+        margin-top: 2rem;
+      }
+}
+
+/*---Bigger Tablet/ Small Desktop---*/
+@media screen and (min-width:1015px) {
+    section.highlights .dishes {
+        grid-template-columns: repeat(3, 18rem);
+      }
+
+      section.highlights .dish {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+      }
+
+      section.highlights .dish-photo {
+        height: 12rem;
+        width: 100%;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        border-bottom-left-radius: 0;
+      }
+
+}
+
+/*---Desktop---*/
+@media screen and (min-width:1250px) {
+    section.highlights .title-wrapper {
+        margin-top: 3rem;
+      }
+}
+
+/*---Bigger Desktop Screen---*/
+
+@media screen and (min-width:1600px) {
+    section.highlights .dishes {
+        grid-template-columns: repeat(3, 23rem);
+      }
+
+      section.highlights .dish-photo {
+        height: 12rem;
+        width: 100%;
+      }
+
+      section.highlights .title-wrapper {
+        margin-top: 5rem;
+      }
+}

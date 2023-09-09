@@ -1,4 +1,5 @@
 import React from 'react';
+import './highlights.css';
 import salad from '../assets/greek salad.jpg';
 import bruchetta from '../assets/bruchetta.png';
 import lemonDessert from '../assets/lemon dessert.jpg';

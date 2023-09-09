@@ -1,4 +1,5 @@
 import React from 'react';
+import './testimonials.css';
 import {BiSolidStar} from 'react-icons/bi';
 import {BiSolidStarHalf} from 'react-icons/bi';
 import customer1 from '../assets/maria';

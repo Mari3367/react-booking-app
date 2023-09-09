@@ -1,4 +1,6 @@
 import React from 'react';
+import './nav.css';
+import {Link} from 'react-router-dom';
 import logo from '../assets/Logo.svg';
 import menuIcon from '../assets/icon-hamburger-menu.svg';
 
@@ -7,7 +9,7 @@ export default function Nav() {
     <nav>
       <img src={logo} alt='little lemon logo' className='logo'/>
       <ul>
-        <li><a href='#'>Home</a></li>
+        <li><Link to='/'>Home</Link></li>
         <li><a href='#'>About</a></li>
         <li><a href='#'>Menu</a></li>
         <li><a href='#'>Reservations</a></li>

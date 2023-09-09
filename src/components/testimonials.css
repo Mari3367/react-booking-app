@@ -1,0 +1,100 @@
+.testimonials-box {
+    background-color: var(--primary-green);
+    display: grid;
+    grid-template-rows: auto 1fr;
+    justify-content: center;
+    font-family: 'Karla', sans-serif;
+  }
+
+  .testimonials-box .people {
+    display: grid;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 3rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .testimonials-box .customer {
+    width: 10rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    position: relative;
+  }
+
+  .testimonials-box .customer-pic-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-green);
+  }
+
+  .review-text {
+    color: var(--primary-green);
+  }
+
+  .testimonials-box h2 {
+    color: white;
+    font-family: 'Markazi Text', serif;
+    font-weight: lighter;
+    font-size: 2.5rem;
+    margin: 0;
+    margin-top: 1rem;
+  }
+
+  .testimonials-box .header {
+    display: flex;
+  }
+
+  .testimonials-box .customer-photo {
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .testimonials-box .rate-stars {
+    color: var(--primary-yellow);
+  }
+
+  /*---MOBILE---*/
+@media screen and (min-width:260px) and (max-width: 640px){
+    .testimonials-box .header {
+        justify-content: center;
+      }
+
+      .testimonials-box .header h2 {
+        font-size: 2rem;
+        margin: 0 2rem;
+        text-align: center;
+        margin-top: 1rem;
+      }
+
+      .testimonials-box .people {
+        grid-template-columns: auto;
+      }
+
+      .testimonials-box .customer {
+        width: 13rem;
+      }
+}
+
+/*---TABLET---*/
+@media screen and (min-width:641px) {
+    .testimonials-box .people {
+        grid-template-columns: 1fr 1fr;
+      }
+}
+
+/*---Bigger Tablet/ Small Desktop---*/
+@media screen and (min-width:1015px) {
+    .testimonials-box .people {
+        grid-template-columns: repeat(4, 1fr);
+      }
+}
+
+/*---Bigger Desktop Screen---*/
+@media screen and (min-width:1600px) {
+    .testimonials-box .customer {
+        width: 13rem;
+      }
+}

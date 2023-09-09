@@ -1,0 +1,155 @@
+section.story {
+    display: grid;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  section.story .story-text {
+    display: grid;
+  }
+
+  section.story h2, h3 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .story-paragraph {
+    width: 100%;
+    line-height: 1.6;
+    font-size: 18px;
+  }
+
+  .story-title {
+    font-size: 3rem;
+    font-family: 'Markazi Text', serif;
+    font-weight: lighter;
+    color: var(--primary-yellow);
+  }
+
+  .story-subtitle {
+    font-size: 2rem;
+    font-family: 'Markazi Text', serif;
+    font-weight: lighter;
+    color: var(--primary-green);
+  }
+
+  section.story .owners {
+    display: grid;
+  }
+
+  section.story .owners-photo {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  /*---MOBILE---*/
+@media screen and (min-width:260px) and (max-width: 640px){
+    section.story {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        padding: 0 2.5rem;
+        gap: 0.5rem;
+      }
+      section.story .story-title, .story-subtitle {
+        text-align: center;
+      }
+      .story-title {
+        font-size: 2.5rem;
+      }
+      .story-subtitle {
+        font-size: 1.8rem;
+      }
+
+      section.story .story-text, section.story .owners{
+        grid-template-columns: 1fr;
+        justify-content: center;
+      }
+      section.story .owners {
+        gap: 1rem;
+      }
+}
+
+/*---TABLET---*/
+@media screen and (min-width:641px) {
+    section.story {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        padding: 0 2.5rem;
+        gap: 0.5rem;
+      }
+
+      section.story .story-text, section.story .owners{
+        grid-template-columns: 1fr;
+        justify-content: center;
+      }
+
+      section.story .owners {
+        gap: 1rem;
+      }
+
+}
+
+/*---Bigger Tablet/ Small Desktop---*/
+@media screen and (min-width:1015px) {
+    section.story {
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+        padding: 0;
+        margin-top: 5rem;
+      }
+
+      section.story .story-text {
+        grid-template-rows: auto auto 1fr;
+        grid-template-columns: 93%;
+        justify-content: end;
+      }
+
+      section.story .owners {
+        grid-template-columns: 93%;
+        justify-content: start;
+        gap: 1rem;
+      }
+
+      section.story .owners-photo {
+        height: 100%;
+      }
+}
+
+/*---Desktop---*/
+@media screen and (min-width:1250px) {
+    section.story .story-text {
+        grid-template-columns: 64%;
+      }
+      section.story .owners {
+        grid-template-columns: 64%;
+      }
+}
+
+/*---Bigger Desktop Screen---*/
+@media screen and (min-width:1600px) {
+    section.story {
+        gap: 5rem;
+      }
+      section.story .story-text {
+        grid-template-columns: 56%;
+      }
+
+      section.story .owners {
+        grid-template-columns: 56%;
+      }
+
+      .story-title {
+        font-size: 4rem;
+      }
+
+      .story-subtitle {
+        font-size: 2.6rem;
+      }
+
+      .story-paragraph {
+        font-size: 1.3rem;
+      }
+}

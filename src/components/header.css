@@ -1,0 +1,201 @@
+header {
+    grid-area: header;
+    background-color: var(--primary-green);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    padding: 2.5rem 15rem;
+    font-family: 'Markazi Text', serif;
+  }
+
+  .header-wrapper h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4rem; /*64px*/
+    color: var(--main-title);
+  }
+
+  .header-wrapper h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 2rem;
+    color: white;
+  }
+
+  .header-image {
+    height: 20rem;
+    width: 18rem;
+    position: absolute;
+    right: 15rem;
+    top: 10%;
+    border-radius: 1rem;
+    object-fit: cover;
+  }
+
+  .header-text {
+    margin-bottom: 2rem;
+    color: white;
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: bold;
+  }
+
+  button.reserve {
+    width: 8rem;
+    height: 2rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 15rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--primary-yellow);
+    font-weight: bold;
+    font-family: 'Karla', sans-serif;
+  }
+
+
+/*---MOBILE---*/
+@media screen and (min-width:260px) and (max-width: 640px){
+    header {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 3rem;
+        padding: 0 2rem;
+        /* grid-area: header; */
+      }
+
+      .header-wrapper h1 {
+        font-size: 2.5rem;
+      }
+      .header-wrapper h3 {
+        font-size: 1.5rem;
+      }
+      .header-text {
+        font-size: 0.9rem;
+      }
+
+      button.reserve {
+        position: relative;
+        left: 0;
+        margin-top: 1rem;
+      }
+
+      .header-image  {
+        display: none;
+      }
+}
+
+/*---TABLET---*/
+@media screen and (min-width:641px) {
+    header {
+        padding: 2rem 7rem;
+      }
+
+      .header-wrapper h1 {
+        font-size: 2.5rem;
+      }
+      .header-wrapper h3 {
+        font-size: 1.7rem;
+      }
+
+      .header-text {
+        margin-bottom: 2.5rem;
+        font-size: 0.8rem;
+      }
+
+      button.reserve {
+        position: absolute;
+        left: 7rem;
+        bottom: 2rem;
+      }
+
+      .header-image  {
+        display: block;
+        height: 16rem;
+        width: 13rem;
+        right: 7rem;
+      }
+}
+
+/*---Bigger Tablet/ Small Desktop---*/
+@media screen and (min-width:1015px) {
+    header {
+        padding: 2.5rem 15rem;
+      }
+      .header-wrapper h1 {
+        font-size: 3rem;
+      }
+      .header-wrapper h3 {
+        font-size: 1.5rem;
+      }
+      .header-image {
+        height: 19rem;
+        width: 16rem;
+        right: 15rem;
+      }
+      button.reserve {
+        position: absolute;
+        bottom: 2rem;
+        left: 15rem;
+      }
+      .header-text {
+        font-size: 1rem;
+      }
+}
+
+/*---Desktop---*/
+@media screen and (min-width:1250px) {
+    header {
+        padding: 2.5rem 15rem;
+      }
+      .header-image {
+        height: 21rem;
+        width: 18rem;
+        right: 20rem;
+      }
+      .header-wrapper h1 {
+        font-size: 4rem;
+      }
+      .header-wrapper h3 {
+        font-size: 2rem;
+      }
+      .header-text {
+        font-size: 0.8rem;
+      }
+}
+
+/*---Bigger Desktop Screen---*/
+
+@media screen and (min-width:1600px) {
+    header {
+        padding: 2.8rem 20rem;
+      }
+      .logo {
+        height: 4rem;
+      }
+      .header-wrapper h1 {
+        font-size: 6rem;
+      }
+      .header-wrapper h3 {
+        font-size: 3rem;
+      }
+      .header-text {
+        font-size: 1.5rem;
+        margin-bottom: 2.5rem;
+      }
+      .header-image {
+        height: 28rem;
+        width: 22rem;
+        right: 20rem;
+      }
+      button.reserve {
+        left: 20rem;
+        width: 13rem;
+        height: 2.8rem;
+        bottom: 2rem;
+        font-size: 1.2rem;
+      }
+}

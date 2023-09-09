@@ -1,4 +1,5 @@
 import React from 'react';
+import './story.css';
 import ownersA from '../assets/Mario and Adrian A.jpg';
 import ownersB from '../assets/Mario and Adrian b.jpg';
 

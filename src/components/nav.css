@@ -1,0 +1,82 @@
+nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+  }
+
+  nav li {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: 'Karla', sans-serif;
+  }
+  nav .mobile-menu {
+    display: none;
+    height: 1.5rem;
+    position: absolute;
+    right: 1rem;
+    top: 0.7rem;
+  }
+
+  /*---MOBILE---*/
+@media screen and (min-width:260px) and (max-width: 640px){
+    nav .logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      nav ul {
+        display: none;
+      }
+
+      nav .mobile-menu {
+        display: block;
+      }
+}
+
+/*---TABLET---*/
+@media screen and (min-width:641px) {
+    nav ul {
+        display: flex;
+        gap: 1rem;
+      }
+      nav li {
+        font-size: 15px;
+      }
+}
+
+/*---Bigger Tablet/ Small Desktop---*/
+@media screen and (min-width:1015px) {
+    nav ul {
+        gap: 1.5rem;
+      }
+}
+
+/*---Desktop---*/
+@media screen and (min-width:1250px) {
+    nav ul {
+      gap: 2rem;
+    }
+}
+
+/*---Bigger Desktop Screen---*/
+@media screen and (min-width:1600px) {
+    nav ul {
+        gap: 3rem;
+      }
+      nav li {
+        font-size: 1.5rem;
+      }
+}

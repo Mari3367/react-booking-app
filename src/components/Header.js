@@ -1,5 +1,7 @@
 import React from 'react';
 import headerImage from '../assets/restauranfood.jpg'
+import './header.css';
+
 export default function Header() {
   return (
     <header>
