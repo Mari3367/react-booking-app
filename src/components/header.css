@@ -54,6 +54,10 @@ header {
     font-family: 'Karla', sans-serif;
   }
 
+  button.reserve a {
+    color: black;
+  }
+
 
 /*---MOBILE---*/
 @media screen and (min-width:260px) and (max-width: 640px){

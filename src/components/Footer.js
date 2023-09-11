@@ -1,6 +1,7 @@
 import React from 'react';
 import footerIcon from '../assets/logo-white.png';
 import './footer.css';
+import {Link} from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -11,10 +12,10 @@ export default function Footer() {
       <div>
         <h4 className='footer-title'>Doormat Navigation</h4>
         <ul>
-          <li><a href='#'>Home</a></li>
+          <li><Link to='/'>Home</Link></li>
           <li><a href='#'>About</a></li>
           <li><a href='#'>Menu</a></li>
-          <li><a href='#'>Reservations</a></li>
+          <li><Link to='/reservations'>Reservations</Link></li>
           <li><a href='#'>Order Online</a></li>
           <li><a href='#'>Login</a></li>
         </ul>

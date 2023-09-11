@@ -46,6 +46,10 @@ section.highlights {
     border-radius: 1rem;
   }
 
+  section.highlights .dishes .dish:hover {
+    box-shadow: 12px 16px 9px -8px rgba(0,0,0,0.3);
+  }
+
   section.highlights .dishes .dish .dish-details {
     margin: 0 1.5rem;
     margin-bottom: 1rem;

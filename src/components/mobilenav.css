@@ -1,0 +1,43 @@
+nav.mobile-nav {
+    display: none;
+}
+
+/*---MOBILE---*/
+@media screen and (min-width:260px) and (max-width: 640px){
+
+    nav.mobile-nav {
+        display: grid;
+        grid-template-columns: 50vw;
+        height: 100vh;
+        position: fixed;
+        z-index: 1000;
+        background-color: white;
+    }
+
+    nav.mobile-nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+
+    nav.mobile-nav li {
+        margin-bottom: 2rem;
+        padding: 1rem 0;
+        padding-left: 0.7rem;
+    }
+
+    nav.mobile-nav li.highlight {
+        background-color: var(--primary-yellow);
+    }
+
+    nav.mobile-nav a {
+        color: black;
+        font-family: 'Karla', sans-serif;
+        word-wrap: break-word;
+    }
+
+    nav.mobile-nav {
+        display: none;
+    }
+  }

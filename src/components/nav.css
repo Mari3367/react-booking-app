@@ -1,27 +1,31 @@
-nav {
+nav.main-nav {
     grid-area: nav;
     display: flex;
     justify-content: center;
   }
 
-  nav ul {
+  nav.main-nav ul {
     display: flex;
     list-style: none;
     gap: 2rem;
   }
 
-  nav li {
+  nav.main-nav li {
     margin: 0;
     padding: 0;
   }
 
-  nav a {
+  nav.main-nav a {
     text-decoration: none;
     color: black;
     font-weight: bold;
     font-family: 'Karla', sans-serif;
   }
-  nav .mobile-menu {
+
+  nav.main-nav a:hover {
+    color: var(--primary-yellow);
+  }
+  nav.main-nav .mobile-menu {
     display: none;
     height: 1.5rem;
     position: absolute;
@@ -29,54 +33,67 @@ nav {
     top: 0.7rem;
   }
 
+  .close {
+    display: none;
+  }
+
   /*---MOBILE---*/
 @media screen and (min-width:260px) and (max-width: 640px){
-    nav .logo {
+    nav.main-nav .logo {
         position: absolute;
         top: 0;
         left: 0;
       }
 
-      nav ul {
+      nav.main-nav ul {
         display: none;
       }
 
-      nav .mobile-menu {
+      nav.main-nav .mobile-menu {
         display: block;
+      }
+
+      .close {
+        height: 1.5rem;
+        position: absolute;
+        right: 1rem;
+        top: 0.7rem;
+        font-size: 2rem;
+        display: none;
       }
 }
 
 /*---TABLET---*/
 @media screen and (min-width:641px) {
-    nav ul {
+    nav.main-nav ul {
         display: flex;
         gap: 1rem;
       }
-      nav li {
+      nav.main-nav li {
         font-size: 15px;
       }
 }
 
 /*---Bigger Tablet/ Small Desktop---*/
 @media screen and (min-width:1015px) {
-    nav ul {
+    nav.main-nav ul {
         gap: 1.5rem;
       }
 }
 
 /*---Desktop---*/
 @media screen and (min-width:1250px) {
-    nav ul {
+    nav.main-nav ul {
       gap: 2rem;
     }
 }
 
 /*---Bigger Desktop Screen---*/
 @media screen and (min-width:1600px) {
-    nav ul {
+    nav.main-nav ul {
         gap: 3rem;
       }
-      nav li {
+      nav.main-nav li {
         font-size: 1.5rem;
       }
 }
