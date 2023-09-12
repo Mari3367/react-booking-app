@@ -1,0 +1,115 @@
+.booking-form {
+    display: grid;
+    grid-template-columns: 30%;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5rem;
+    gap: 1rem;
+    align-items: center;
+    height: 50vh;
+}
+
+.booking-form label {
+    color: var(--primary-green);
+    font-family: 'Karla', sans-serif;
+}
+
+select.occasions {
+    width: 100%;
+}
+
+.booking-form input, select {
+    font-family: 'Karla', sans-serif;
+    color: var(--primary-green);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid var(--primary-green);
+    outline: none;
+    margin: 0;
+}
+
+
+.dropdown-title-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 1.5rem;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    background-color: var(--secondary-pale-gray);
+    border-radius: 5px;
+    box-shadow: 0px 7px 9px -3px rgba(0,0,0,0.3);
+    cursor: pointer;
+
+}
+
+.occasions-dropdown .occasions {
+    background-color: var(--secondary-pale-gray);
+    margin: 0;
+    /* display: flex; */
+    flex-direction: column;
+    list-style-type: none;
+    display: none;
+    cursor: pointer;
+}
+
+
+button.form-btn {
+    background-color: var(--primary-yellow);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 1rem;
+    color: var(--primary-green);
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+/*---MOBILE---*/
+@media screen and (min-width:260px) and (max-width: 640px){
+    .booking-form {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0 2rem;
+        width: unset;
+    }
+  }
+
+  /*flipped phone*/
+  @media screen and (max-height: 600px) {
+    .booking-form {
+        height: unset;
+    }
+  }
+
+  /*---Medium---*/
+  @media screen and (min-width: 641px) and (max-width: 900px) {
+    .booking-form {
+        grid-template-columns: 50%;
+    }
+
+    .booking-form label {
+        padding: 0;
+        margin: 0;
+    }
+  }
+
+  /*---Bigger Desktop Screen---*/
+
+@media screen and (min-width:1600px) {
+    .booking-form {
+        height: 50vh;
+    }
+
+    button.form-btn {
+        font-size: 1.3rem;
+    }
+
+    .booking-form input, select {
+        font-size: 1.2rem;
+    }
+
+    .booking-form label {
+        font-size: 1.3rem;
+        margin: 0;
+    }
+   }

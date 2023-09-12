@@ -31,7 +31,8 @@ export default function Nav() {
         <li><Link to='/'>Home</Link></li>
         <li><a href='#'>About</a></li>
         <li><a href='#'>Menu</a></li>
-        <li><Link to='/reservations'>Reservations</Link></li>
+        {/* <li><Link to='/reservations'>Reservations</Link></li> */}
+        <li><Link to='/bookingpage'>Reservations</Link></li>
         <li><a href='#'>Order Online</a></li>
         <li><a href='#'>Login</a></li>
       </ul>

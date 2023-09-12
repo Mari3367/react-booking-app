@@ -6,11 +6,6 @@ import {LiaGlassCheersSolid} from 'react-icons/lia';
 
 export default function Reservations() {
 
-  // function addSelected() {
-  //   const dropdown = document.querySelector('.dropdown');
-  //   dropdown.classList.add('selected');
-  // }
-
   const select = (e) => {
     const dropdown = document.querySelector('.dropdown');
     dropdown.classList.toggle('active');

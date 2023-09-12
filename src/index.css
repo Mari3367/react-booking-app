@@ -25,7 +25,6 @@ body {
   grid-template-areas: 'nav' 'header' 'main' 'footer';
 }
 
-
 main {
   grid: main;
 }
