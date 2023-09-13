@@ -1,127 +1,143 @@
 import React from 'react';
-import './bookingform.css';
+import './component.css';
+import BookingPage from './BookingPage';
 import {useState} from 'react';
-// import BookingPage from './BookingPage';
 
-const availableTimes  = ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00'];
+const availableTimes = ['17:00', '17:30', '18:00']
 
-export default function BookingForm() {
+const BookingForm = () => {
+  const initialDate = new Date().toISOString().split('T')[0];
+  const defaultTime = availableTimes[0];
+  const minGuestsNumber = 1;
+  const maxGuestsNumber = 10;
+  const occasions = ['Birthday', 'Engagement', 'Anniversary'];
+  const invalidDateErrorMessage = 'Please choose a valid date';
+  const invalidTimeErrorMessage = 'Please choose a valid time';
+  const invalidOccasionErrorMessage = 'Please choose a valid occasion';
+  const invalidNumberOfGuestsErrorMessage =
+    'Please enter a number between 1 and 10';
 
-  const [time, setTime] = useState(availableTimes[0]);
+  const [date, setDate] = useState(initialDate);
+  const [time, setTime] = useState(defaultTime);
+  const [
+    guestsNumber,
+    setGuestsNumber
+  ] = useState(minGuestsNumber);
+  const [occasion, setOccasion] = useState(occasions[0]);
 
-  function handleTime(e) {
-    setTime(e.target.value);
-  }
+  const isDateValid = () => date !== '';
+  const isTimeValid = () => time !== '';
+  const isNumberOfGuestsValid = () => guestsNumber !== '';
+  const isOccasionValid = () => occasion !== '';
 
-  const [date, setDate] = useState(new Date().toISOString().substring(0, 10));
-  function handleDate(e) {
+  const areAllFieldsValid = () =>
+    isDateValid()
+    && isTimeValid()
+    && isNumberOfGuestsValid()
+    && isOccasionValid();
+  
+  const handleDateChange = e => {
     setDate(e.target.value);
-  }
+    // dispatchOnDateChange(e.target.value);
+  };
 
-  const [guestNum, setGuestNum] = useState(1);
-  function handleGuestsNum(e) {
-    setGuestNum(e.target.value);
-    console.log(guestNum);
-  }
+  const handleTimeChange = e => setTime(e.target.value);
 
-  const select = (e) => {
-    const dropdown = document.querySelector('.occasions-dropdown');
-    dropdown.classList.toggle('active');
-    const option = e.target.innerText;
-    const textbox = document.querySelector('.selected-event');
-    textbox.innerText = option;
-    if(e.target.classList.contains('occasion')){
-      dropdown.classList.add('selected');
-    }
-  }
+  // const handleFormSubmit = e => {
+  //   e.preventDefault();
+  //   submitData({ date, time, numberOfGuests, occasion, });
+  // };
 
   return (
-        <form className='booking-form'>
-            <label htmlFor='booking-date'>Date</label>
-            <input type='date' id='booking-date' defaultValue={date} onChange={handleDate} required/>
-            <label htmlFor='booking-time'>Time</label>
-            <select className='times' onChange={handleTime}>
-              {availableTimes.map((booktime) => {
-                return <option key={booktime}>{booktime}</option>
-              })}
-            </select>
-            <label htmlFor='guestsNumber'>Number of guests</label>
-            <input type='number' id='guestsNumber' min='1' max='10' placeholder={guestNum} onChange={handleGuestsNum}/>
-              <label htmlFor='occasions'>Occasion</label>
-              <select id='occasions'>
-                <option className='occasion' onClick={select}>Birthday</option>
-                <option className='occasion' onClick={select}>Engagement</option>
-                <option className='occasion' onClick={select}>Anniversary</option>
-              </select>
-            <button type='submit' className='form-btn'>Make your reservation</button>
-        </form>
+  <div className='form-wrapper'>
+      <div className='booking-header-wrap'>
+        <h1 className='booking-title'>Table Reservation</h1>
+      </div>
+    <form className='bookingForm'>
+      <BookingPage
+        label="Date"
+        htmlFor="booking-date"
+        hasError={!isDateValid()}
+        errorMessage={invalidDateErrorMessage}
+      >
+        <input
+          type="date"
+          id="booking-date"
+          name="booking-date"
+          min={initialDate}
+          value={date}
+          required={true}
+          onChange={handleDateChange}
+        />
+      </BookingPage>
+      <BookingPage
+        label="Time"
+        htmlFor="booking-time"
+        hasError={!isTimeValid()}
+        errorMessage={invalidTimeErrorMessage}
+      >
+        <select
+          id="booking-time"
+          name="booking-time"
+          value={time}
+          required={true}
+          onChange={handleTimeChange}
+        >
+          {availableTimes.map(bookingTime =>
+            <option data-testid="booking-time-option" key={bookingTime}>
+              {bookingTime}
+            </option>
+          )}
+        </select>
+      </BookingPage>
+      <BookingPage
+        label="Number of guests"
+        htmlFor="booking-number-guests"
+        hasError={!isNumberOfGuestsValid()}
+        errorMessage={invalidNumberOfGuestsErrorMessage}
+      >
+        <input
+          type="number"
+          id="booking-number-guests"
+          name="booking-number-guests"
+          value={guestsNumber}
+          min={minGuestsNumber}
+          max={maxGuestsNumber}
+          required={true}
+          onChange={e => setGuestsNumber(e.target.value)}
+        />
+      </BookingPage>
+      <BookingPage
+        label="Occasion"
+        htmlFor="booking-occasions"
+        hasError={!isOccasionValid()}
+        errorMessage={invalidOccasionErrorMessage}
+      >
+        <select
+          id="booking-occasions"
+          name="booking-occasions"
+          value={occasion}
+          required={true}
+          onChange={e => setOccasion(e.target.value)}
+        >
+          {occasions.map(occasion =>
+            <option data-testid="booking-occasion-option" key={occasion}>
+              {occasion}
+            </option>
+          )}
+        </select>
+      </BookingPage>
+        <button
+          className="form-btn"
+          type="submit"
+          disabled={!areAllFieldsValid()}
+        >
+          Make your reservation
+        </button>
+    </form>
+  </div>
+  );
+};
 
-    /*testing new code*/
+export default BookingForm;
 
-  //   <form>
-  //   <BookingPage 
-  //     label="Date" 
-  //     htmlFor="booking-date" 
-  //   >
-  //     <input 
-  //       type="date" 
-  //       id="booking-date" 
-  //       name="booking-date" 
-  //       defaultValue={date}
-  //       required={true} 
-  //     />
-  //   </BookingPage>
-  //   <BookingPage 
-  //     label="Time" 
-  //     htmlFor="booking-time" 
-  //   >
-  //     <select 
-  //       id="booking-time" 
-  //       name="booking-time" 
-  //       value={time} 
-  //       required={true} 
-  //       onChange={handleTime}
-  //     >
-  //       {availableTimes.map(booktime => 
-  //         <option data-testid="booking-time-option" key={booktime}>
-  //           {booktime}
-  //         </option>
-  //       )}
-  //     </select>
-  //   </BookingPage>
-  //   <BookingPage 
-  //     label="Number of guests" 
-  //     htmlFor="guestsNumber" 
-  //   >
-  //     <input 
-  //       type="number" 
-  //       id="guestsNumber" 
-  //       name="booking-number-guests" 
-  //       value={guestNum} 
-  //       min='1' 
-  //       max='10'
-  //       required={true} 
-  //       onChange={handleGuestsNum}
-  //     />
-  //   </BookingPage>
-  //   <BookingPage 
-  //     label="Occasion" 
-  //     htmlFor="occasions" 
-  //   >
-  //     <select 
-  //       id="occasions" 
-  //     >
-  //      <option className='occasion' onClick={select}>Birthday</option>
-  //      <option className='occasion' onClick={select}>Engagement</option>
-  //      <option className='occasion' onClick={select}>Anniversary</option>
-  //     </select>
-  //   </BookingPage>
-  //   <button 
-  //     className="form-btn" 
-  //     type="submit" 
-  //   >
-  //     Make your reservation
-  //   </button>
-  // </form>
-   )
-}

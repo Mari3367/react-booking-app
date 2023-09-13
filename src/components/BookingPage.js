@@ -1,21 +1,16 @@
 import React from 'react';
-import './bookingpage.css';
-import BookingForm from './BookingForm';
+import './component.css';
+// import Component1 from './Component1';
 
-export default function BookingPage() {
-
+const BookingPage = ({ children, label, htmlFor, hasError, errorMessage }) => {
   return (
-    <section className='booking-page'>
-         <div className='booking-title-wrapper'>
-            <h1 className='booking-title'>Table Reservation</h1>
-        </div>
-        <BookingForm />
-    </section>
+    <div className="form-field">
+      <label htmlFor={htmlFor}>{label}</label>
+      {children}
+      {/* {hasError && errorMessage ?
+        <p data-testid="error-message">{errorMessage}</p> : null} */}
+    </div>
+  );
+};
 
-    /*testing*/
-    // <section className="booking-page">
-    //   <label htmlFor={htmlFor}>{label}</label>
-    //   {children}
-    // </section>
-  )
-}
+export default BookingPage;

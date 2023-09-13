@@ -32,7 +32,7 @@ export default function Nav() {
         <li><Link to='/about'>About</Link></li>
         <li><a href='#'>Menu</a></li>
         {/* <li><Link to='/reservations'>Reservations</Link></li> */}
-        <li><Link to='/bookingpage'>Reservations</Link></li>
+        <li><Link to='/reservations'>Reservations</Link></li>
         <li><a href='#'>Order Online</a></li>
         <li><a href='#'>Login</a></li>
       </ul>
