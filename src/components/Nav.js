@@ -29,7 +29,7 @@ export default function Nav() {
       <img src={logo} alt='little lemon logo' className='logo'/>
       <ul>
         <li><Link to='/'>Home</Link></li>
-        <li><a href='#'>About</a></li>
+        <li><Link to='/about'>About</Link></li>
         <li><a href='#'>Menu</a></li>
         {/* <li><Link to='/reservations'>Reservations</Link></li> */}
         <li><Link to='/bookingpage'>Reservations</Link></li>
