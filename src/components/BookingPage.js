@@ -1,6 +1,5 @@
 import React from 'react';
-import './component.css';
-// import Component1 from './Component1';
+import './booking.css';
 
 const BookingPage = ({ children, label, htmlFor, hasError, errorMessage }) => {
   return (

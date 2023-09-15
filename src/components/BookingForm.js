@@ -1,5 +1,5 @@
 import React from 'react';
-import './component.css';
+import './booking.css';
 import BookingPage from './BookingPage';
 import {useState} from 'react';
 
@@ -35,7 +35,7 @@ const BookingForm = () => {
     && isTimeValid()
     && isNumberOfGuestsValid()
     && isOccasionValid();
-  
+
   const handleDateChange = e => {
     setDate(e.target.value);
     // dispatchOnDateChange(e.target.value);
