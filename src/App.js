@@ -5,6 +5,7 @@ import Main from './components/Main';
 import Footer from './components/Footer';
 import MobileNav from './components/MobileNav';
 import BookingForm from './components/BookingForm';
+import ConfirmedBooking from './components/ConfirmedBooking';
 
 function App() {
   return (
@@ -13,8 +14,8 @@ function App() {
     <Nav />
     <Routes>
       <Route path='/' element={ <Main />}></Route>
-      {/* <Route path='/reservations' element={<Reservations />}></Route> */}
       <Route path='/reservations' element={<BookingForm />}></Route>
+      <Route path='/confirmed' element={<ConfirmedBooking />}></Route>
     </Routes>
     <Footer />
     </>
