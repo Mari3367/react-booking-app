@@ -3,9 +3,15 @@ import './booking.css';
 import BookingPage from './BookingPage';
 import {useState} from 'react';
 
-const availableTimes = ['17:00', '17:30', '18:00']
+// const availableTimes = ['17:00', '17:30', '18:00']
 
-const BookingForm = () => {
+const BookingForm = (
+  {
+    availableTimes,
+    dispatchOnDateChange,
+    submitData
+  }
+) => {
   const initialDate = new Date().toISOString().split('T')[0];
   const defaultTime = availableTimes[0];
   const minGuestsNumber = 1;
@@ -38,22 +44,22 @@ const BookingForm = () => {
 
   const handleDateChange = e => {
     setDate(e.target.value);
-    // dispatchOnDateChange(e.target.value);
+    dispatchOnDateChange(e.target.value);
   };
 
   const handleTimeChange = e => setTime(e.target.value);
 
-  // const handleFormSubmit = e => {
-  //   e.preventDefault();
-  //   submitData({ date, time, numberOfGuests, occasion, });
-  // };
+  const handleFormSubmit = e => {
+    e.preventDefault();
+    submitData({ date, time, guestsNumber, occasion, });
+  };
 
   return (
   <div className='form-wrapper'>
       <div className='booking-header-wrap'>
         <h1 className='booking-title'>Table Reservation</h1>
       </div>
-    <form className='bookingForm'>
+    <form className='bookingForm' onSubmit={handleFormSubmit}>
       <BookingPage
         label="Date"
         htmlFor="booking-date"

@@ -1,14 +1,9 @@
 .form-wrapper {
-    /* height: 70vh; */
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
 }
 .bookingForm {
-    /* display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    height: 50vh; */
     display: grid;
     grid-template-columns: 30%;
     justify-content: center;
@@ -80,10 +75,23 @@ button.form-btn {
 
 }
 
+.confirmation {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Karla', sans-serif;
+    color: var(--primary-green);
+}
+
+.confirm-icon {
+    font-size: 5rem;
+}
+
 /*---MOBILE---*/
 @media screen and (min-width:260px) and (max-width: 640px){
       .bookingForm {
-        /* grid-template-columns: 70%; */
         display: grid;
         grid-template-columns: 1fr;
         padding: 0 2rem;
@@ -110,6 +118,20 @@ button.form-btn {
         margin-bottom: 0;
     }
 
+    .confirmation {
+        padding: 10rem 2rem;
+        height: unset;
+    }
+
+    .confirmation h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .confirmation p {
+        text-align: center;
+    }
+
   }
 
   /*flipped phone*/
@@ -118,14 +140,23 @@ button.form-btn {
         height: unset;
         margin-top: 0;
     }
+
   }
+
+  @media screen and (max-height: 420px) {
+    
+    .confirmation {
+        height: 50%;
+    }
+  }
+
 
    /*---Medium---*/
    @media screen and (min-width: 641px) and (max-width: 900px) {
     .bookingForm {
         grid-template-columns: 50%;
     }
-    
+
     .form-field {
         grid-template-columns: 100%;
     }
@@ -159,5 +190,17 @@ button.form-btn {
     .form-field label {
         font-size: 1.3rem;
         margin: 0;
+    }
+
+    .confirmation {
+        height: 70vh;
+    }
+   }
+
+   /*Big screen height*/
+
+   @media screen and (min-height:1100px) {
+    .confirmation {
+        height: 70vh;
     }
    }
