@@ -57,7 +57,7 @@ const BookingForm = (
   return (
   <div className='form-wrapper'>
       <div className='booking-header-wrap'>
-        <h1 className='booking-title'>Table Reservation</h1>
+        <h1 className='booking-title' data-testid='bookingform-heading'>Table Reservation</h1>
       </div>
     <form className='bookingForm' onSubmit={handleFormSubmit}>
       <BookingPage
@@ -137,6 +137,7 @@ const BookingForm = (
           className="form-btn"
           type="submit"
           disabled={!areAllFieldsValid()}
+          aria-label='Submit'
         >
           Make your reservation
         </button>
