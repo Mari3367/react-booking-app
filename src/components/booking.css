@@ -89,6 +89,11 @@ button.form-btn {
     font-size: 5rem;
 }
 
+.error-message {
+    margin: 0;
+    color: red;
+}
+
 /*---MOBILE---*/
 @media screen and (min-width:260px) and (max-width: 640px){
       .bookingForm {

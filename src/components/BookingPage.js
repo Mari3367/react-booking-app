@@ -6,8 +6,8 @@ const BookingPage = ({ children, label, htmlFor, hasError, errorMessage }) => {
     <div className="form-field">
       <label htmlFor={htmlFor}>{label}</label>
       {children}
-      {/* {hasError && errorMessage ?
-        <p data-testid="error-message">{errorMessage}</p> : null} */}
+      {hasError && errorMessage ?
+        <p data-testid="error-message" className='error-message'>{errorMessage}</p> : null}
     </div>
   );
 };

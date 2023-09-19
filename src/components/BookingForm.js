@@ -25,10 +25,7 @@ const BookingForm = (
 
   const [date, setDate] = useState(initialDate);
   const [time, setTime] = useState(defaultTime);
-  const [
-    guestsNumber,
-    setGuestsNumber
-  ] = useState(minGuestsNumber);
+  const [ guestsNumber, setGuestsNumber ] = useState(minGuestsNumber);
   const [occasion, setOccasion] = useState(occasions[0]);
 
   const isDateValid = () => date !== '';
