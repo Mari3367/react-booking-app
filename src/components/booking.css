@@ -75,6 +75,11 @@ button.form-btn {
 
 }
 
+button.form-btn:hover {
+    background-color: var(--primary-green);
+    color: white;
+}
+
 .confirmation {
     display: flex;
     flex-direction: column;
@@ -149,7 +154,6 @@ button.form-btn {
   }
 
   @media screen and (max-height: 420px) {
-    
     .confirmation {
         height: 50%;
     }

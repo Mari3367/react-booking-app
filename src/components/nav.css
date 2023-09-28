@@ -1,7 +1,7 @@
 nav.main-nav {
     grid-area: nav;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
   }
 
   nav.main-nav ul {

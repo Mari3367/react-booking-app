@@ -33,6 +33,11 @@ section.highlights {
     font-family: 'Karla', sans-serif;
   }
 
+  section.highlights .menu-button:hover {
+    background-color: var(--primary-green);
+    color: white;
+  }
+
   section.highlights .dishes {
     display: grid;
     grid-template-columns: repeat(3, 20rem);

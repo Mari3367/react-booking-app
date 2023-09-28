@@ -10,7 +10,7 @@ export default function Highlights() {
     <section className='highlights'>
         <div className='title-wrapper'>
           <h2>This weeks specials!</h2>
-          <button className='menu-button'>Online Menu</button>
+          <button className='menu-button' aria-label='On Click'>Online Menu</button>
         </div>
         <div className='dishes'>
           <div className='dish'>

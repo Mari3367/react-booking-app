@@ -3,7 +3,6 @@ import './booking.css';
 import BookingPage from './BookingPage';
 import {useState} from 'react';
 
-// const availableTimes = ['17:00', '17:30', '18:00']
 
 const BookingForm = (
   {
@@ -13,6 +12,7 @@ const BookingForm = (
   }
 ) => {
   const initialDate = new Date().toISOString().split('T')[0];
+  const maxDate = '2030-01-01';
   const defaultTime = availableTimes[0];
   const minGuestsNumber = 1;
   const maxGuestsNumber = 10;
@@ -68,6 +68,7 @@ const BookingForm = (
           id="booking-date"
           name="booking-date"
           min={initialDate}
+          max={maxDate}
           value={date}
           required={true}
           onChange={handleDateChange}

@@ -40,6 +40,10 @@ footer {
     text-decoration: none;
   }
 
+  footer a:hover {
+    color: var(--primary-yellow);
+  }
+
   /*---MOBILE---*/
 
   @media screen and (min-width:260px) and (max-width: 640px) {

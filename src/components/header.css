@@ -58,6 +58,15 @@ header {
     color: black;
   }
 
+  button.reserve:hover{
+    background-color: var(--primary-green);
+    border: 2px solid var(--primary-yellow);
+  }
+
+  button.reserve a:hover {
+    color: white;
+  }
+
 
 /*---MOBILE---*/
 @media screen and (min-width:260px) and (max-width: 640px){

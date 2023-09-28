@@ -11,7 +11,7 @@ export default function Header() {
       <h3>Chicago</h3>
       <p className='header-text'>We are family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
       {/* <button className='reserve'><Link to='/reservations'>Reserve a table</Link></button> */}
-      <button className='reserve'><Link to='/reservations'>Reserve a table</Link></button>
+      <button className='reserve' aria-label='On Click'><Link to='/reservations'>Reserve a table</Link></button>
 
      </div>
       <img src={headerImage} alt='restauran food' className='header-image'/>
