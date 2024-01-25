@@ -13,8 +13,8 @@ export default function Footer() {
         <h4 className='footer-title'>Doormat Navigation</h4>
         <ul>
           <li><Link to='/'>Home</Link></li>
-          <li><a href='#'>About</a></li>
-          <li><a href='#'>Menu</a></li>
+          <li><Link to='/about'>About</Link></li>
+          <li><Link to='/menu'>Menu</Link></li>
           <li><Link to='/reservations'>Reservations</Link></li>
           <li><a href='#'>Order Online</a></li>
           <li><a href='#'>Login</a></li>
