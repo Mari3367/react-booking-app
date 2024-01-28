@@ -52,10 +52,13 @@ header {
     background-color: var(--primary-yellow);
     font-weight: bold;
     font-family: 'Karla', sans-serif;
+    transition: background-color 300ms;
+
   }
 
   button.reserve a {
     color: black;
+    transition: color 300ms;
   }
 
   button.reserve:hover{
@@ -63,7 +66,7 @@ header {
     border: 2px solid var(--primary-yellow);
   }
 
-  button.reserve a:hover {
+  button.reserve:hover > a {
     color: white;
   }
 

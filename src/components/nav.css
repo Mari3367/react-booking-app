@@ -21,6 +21,7 @@ nav.main-nav {
     color: black;
     font-weight: bold;
     font-family: 'Karla', sans-serif;
+    transition: color 150ms;
   }
 
   nav.main-nav a:hover {

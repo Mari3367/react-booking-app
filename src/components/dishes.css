@@ -1,24 +1,24 @@
-.salads-wrapper {
+.menu-dishes-wrapper {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
-.salads {
+.menu-dishes {
     display: grid;
     grid-template-columns: repeat(3, 20rem);
     gap: 5rem;
 }
 
-.salads-heading {
+.menu-dishes-heading {
     font-family: 'Markazi Text', serif;
     font-weight: lighter;
     color: var(--primary-green);
     font-size: 3rem;
 }
 
-.salad {
+.menu-dish {
     background-color: var(--secondary-pale-gray);
     position: relative;
     border-radius: 1rem;
@@ -26,11 +26,11 @@
     transition: transform 300ms;
 }
 
-.salad:hover {
+.menu-dish:hover {
     transform: scale(1.1);
 }
 
-.salad img {
+.menu-dish img {
     height: 12rem;
     width: 100%;
     border-top-left-radius: 1rem;
@@ -40,36 +40,35 @@
 }
 
 
-
-.salad-title, .salad-details, .cart-price-wrapper {
+.menu-dish-title, .menu-dish-details, .cart-price-wrapper {
     padding: 0 2rem;
 }
 
 
-.salad .cart-price-wrapper {
+.menu-dish .cart-price-wrapper {
     display: flex;
     justify-content: space-between;
     padding-top: 1rem;
     padding-bottom: 2.5rem;
 }
 
-.salad-title {
+.menu-dish-title {
     font-family: 'Markazi Text', serif;
     font-size: 1.5rem;
 }
 
-.salad-details {
+.menu-dish-details {
     font-family: 'Karla', sans-serif;
     font-size: 1rem;
     color: var(--primary-green);
 }
 
-.salad-price, .basket {
+.menu-dish-price, .basket {
       position: absolute;
       bottom: 1.6rem;
 }
 
-.salad-price {
+.menu-dish-price {
     right: 2rem;
     font-weight: bold;
     font-family: 'Karla', sans-serif;
@@ -93,16 +92,17 @@
 
 /*---TABLET---*/
 @media screen and (min-width: 631px) and (max-width: 1150px) {
-    .salads-wrapper {
+    .menu-dishes-wrapper {
         padding: 0 2rem;
     }
-    .salads {
+    .menu-dishes {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: .5rem;
     }
 
-    .salad img {
+
+    .menu-dish img {
         height: 15rem;
     }
 }
@@ -110,10 +110,10 @@
 /*---MOBILE---*/
 
 @media screen and (min-width:260px) and (max-width: 630px){
-    .salads-wrapper {
+    .menu-dishes-wrapper {
         padding: 0 2rem;
     }
-    .salads {
+    .menu-dishes {
         display: grid;
         grid-template-columns: 1fr;
         gap: 2rem;

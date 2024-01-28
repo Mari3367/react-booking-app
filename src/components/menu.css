@@ -1,0 +1,46 @@
+.menu {
+    /**/
+}
+
+.menuSalads, .menuDishes, .menuWines {
+    /* display: flex;
+    justify-content: space-evenly; */
+    display: grid;
+    /* place-content: center; */
+    grid-template-columns: repeat(3, 1fr);
+    /* align-items: center; */
+    padding-top: 2rem;
+    justify-items: center;
+}
+
+.menu img {
+    height: 20rem;
+    width: 20rem;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.menu-section {
+    position: relative;
+}
+
+button.see-more {
+    background-color: pink;
+    width: 20rem;
+    margin-top: 2rem;
+    height: 2rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--primary-yellow);
+    font-weight: bold;
+    font-family: 'Karla', sans-serif;
+    transition: background-color 300ms;
+}
+
+button.see-more:hover {
+    background-color: var(--primary-green);
+}
+
+button.see-more:hover > a {
+    color: white !important;
+}
