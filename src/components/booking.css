@@ -72,7 +72,7 @@ button.form-btn {
     margin-top: 1rem;
     width: 100%;
     margin-bottom: 2rem;
-
+    transition: background-color 300ms;
 }
 
 button.form-btn:hover {

@@ -34,27 +34,24 @@ const wines = [
 
 
 
-
 export default function Menu() {
   return (
     <section className='menu'>
-      {/* <ul>
-        <li><Link to='./salads' style={{color:'black'}}>Salads</Link></li>
-        <li><Link to='./dishes' style={{color:'black'}}>Dishes</Link></li>
-        <li><Link to='./wines' style={{color:'black'}}>Wines</Link></li>
-      </ul> */}
+      <h1 className='menu-heading'>Salads</h1>
       <div className='menuSalads menu-section'>
         {salads.map((salad) => {
           return <img src={salad.image} alt={salad.name} key={salad.id}/>
         })}
         <button className='see-more'><Link to='./salads' style={{color:'black'}}>See More</Link></button>
       </div>
+      <h1 className='menu-heading'>Dishes</h1>
       <div className='menuDishes menu-section'>
         {dishes.map((dish) => {
           return <img src={dish.image} alt={dish.name} key={dish.id}/>
         })}
         <button className='see-more'><Link to='./dishes' style={{color:'black'}}>See More</Link></button>
       </div>
+      <h1 className='menu-heading'>Wines</h1>
       <div className='menuWines menu-section'>
         {wines.map((wine) => {
           return <img src={wine.image} alt={wine.name} key={wine.id}/>

@@ -4,13 +4,14 @@ import salad from '../assets/greek salad.jpg';
 import bruchetta from '../assets/bruchetta.png';
 import lemonDessert from '../assets/lemon dessert.jpg';
 import {MdDeliveryDining} from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
 export default function Highlights() {
   return (
     <section className='highlights'>
         <div className='title-wrapper'>
           <h2>This weeks specials!</h2>
-          <button className='menu-button' aria-label='On Click'>Online Menu</button>
+          <button className='menu-button' aria-label='On Click'><Link to='./menu'>Online Menu</Link></button>
         </div>
         <div className='dishes'>
           <div className='dish'>

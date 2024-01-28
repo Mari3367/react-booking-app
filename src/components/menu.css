@@ -1,16 +1,16 @@
 .menu {
-    /**/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .menuSalads, .menuDishes, .menuWines {
-    /* display: flex;
-    justify-content: space-evenly; */
     display: grid;
-    /* place-content: center; */
     grid-template-columns: repeat(3, 1fr);
-    /* align-items: center; */
     padding-top: 2rem;
     justify-items: center;
+    gap: 2rem;
 }
 
 .menu img {
@@ -25,7 +25,6 @@
 }
 
 button.see-more {
-    background-color: pink;
     width: 20rem;
     margin-top: 2rem;
     height: 2rem;
@@ -35,6 +34,7 @@ button.see-more {
     font-weight: bold;
     font-family: 'Karla', sans-serif;
     transition: background-color 300ms;
+    grid-column: 2/3;
 }
 
 button.see-more:hover {
@@ -43,4 +43,49 @@ button.see-more:hover {
 
 button.see-more:hover > a {
     color: white !important;
+}
+
+.menu h1 {
+    font-family: 'Markazi Text', serif;
+    color: var(--primary-green);
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+/*---TABLET---*/
+
+@media screen and (min-width: 631px) and (max-width: 1150px) {
+    .menu img {
+        height: 11rem;
+        width: 11rem;
+    }
+
+    button.see-more {
+        width: 11rem;
+        grid-column: 2;
+    }
+}
+
+/*---MOBILE---*/
+
+@media screen and (min-width:260px) and (max-width: 630px){
+    .menuSalads, .menuDishes, .menuWines {
+        grid-template-columns: 1fr !important;
+    }
+    .menu h1 {
+        margin: 0;
+        margin-top: 3rem;
+    }
+
+    button.see-more {
+        grid-row: 1!important;
+        grid-column: unset;
+        margin-top: 0;
+        width: 15rem;
+    }
+
+    .menu img {
+        height: 15rem;
+        width: 15rem;
+    }
 }

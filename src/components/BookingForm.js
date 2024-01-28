@@ -12,7 +12,7 @@ const BookingForm = (
   }
 ) => {
   const initialDate = new Date().toISOString().split('T')[0];
-  const maxDate = '2030-01-01';
+  const maxDate = '2026-01-01';
   const defaultTime = availableTimes[0];
   const minGuestsNumber = 1;
   const maxGuestsNumber = 10;
