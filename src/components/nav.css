@@ -35,6 +35,13 @@ nav.main-nav {
     top: 0.7rem;
   }
 
+  .nav-cart-logo {
+    position: absolute;
+    right: 1.5rem;
+    top: .5rem;
+    height: 2rem;
+  }
+
   .close {
     display: none;
   }
@@ -73,6 +80,10 @@ nav.main-nav {
       }
       nav.main-nav li {
         font-size: 15px;
+      }
+
+      .nav-cart-logo {
+        /* position: unset; */
       }
 }
 

@@ -11,7 +11,7 @@ import Menu from './components/Menu';
 import Salads from './components/Salads';
 import Dishes from './components/Dishes';
 import Wines from './components/Wines';
-
+import OrderOnline from './components/OrderOnline';
 
 function App() {
   return (
@@ -27,6 +27,7 @@ function App() {
       <Route path='/menu/salads' element={<Salads />}></Route>
       <Route path='/menu/dishes' element={<Dishes />}></Route>
       <Route path='/menu/wines' element={<Wines />}></Route>
+      <Route path='/order' element={<OrderOnline />}></Route>
     </Routes>
     <Footer />
     </>

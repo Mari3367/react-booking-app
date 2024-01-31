@@ -7,7 +7,7 @@ import fillet from '../assets/dishes/fillet.jpg';
 import fishAndShrimp from '../assets/dishes/fish-and-shrimp.jpg';
 import greekStyleBeefPita from '../assets/dishes/greek-style-beef-pita.jpg';
 import meatballs from '../assets/dishes/meatballs.jpg';
-import pasta from '../assets/dishes/pasta.jpg';
+import farfallePasta from '../assets/dishes/pasta.jpg';
 import spinachFetaPinwheels from '../assets/dishes/spinach-feta-pinwheels.jpg';
 
 const dishes = [
@@ -18,7 +18,7 @@ const dishes = [
 {name: 'Fish and Shrimp', image: fishAndShrimp, id: 'fishAndShrimp', details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean blandit purus nec mollis finibus. Aliquam vehicula sagittis quam, id tempor dui placerat in. In commodo metus vel sem faucibus volutpat. Donec a vulputate nunc, volutpat volutpat lacus. Praesent lobortis vehicula sapien vitae cursus. Donec ut quam sed enim pulvinar efficitur. Phasellus ut viverra arcu.', price: '$15.00'},
 {name: 'Greek-Style Beef Pita', image: greekStyleBeefPita, id: 'greekStyleBeefPita', details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean blandit purus nec mollis finibus. Aliquam vehicula sagittis quam, id tempor dui placerat in. In commodo metus vel sem faucibus volutpat. Donec a vulputate nunc, volutpat volutpat lacus. Praesent lobortis vehicula sapien vitae cursus. Donec ut quam sed enim pulvinar efficitur. Phasellus ut viverra arcu.', price: '$16.00'},
 {name: 'Meatballs', image: meatballs, id: 'meatballs', details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean blandit purus nec mollis finibus. Aliquam vehicula sagittis quam, id tempor dui placerat in. In commodo metus vel sem faucibus volutpat. Donec a vulputate nunc, volutpat volutpat lacus. Praesent lobortis vehicula sapien vitae cursus. Donec ut quam sed enim pulvinar efficitur. Phasellus ut viverra arcu.', price: '$13.99'},
-{name: 'Pasta', image: pasta, id: 'pasta', details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean blandit purus nec mollis finibus. Aliquam vehicula sagittis quam, id tempor dui placerat in. In commodo metus vel sem faucibus volutpat. Donec a vulputate nunc, volutpat volutpat lacus. Praesent lobortis vehicula sapien vitae cursus. Donec ut quam sed enim pulvinar efficitur. Phasellus ut viverra arcu.', price: '$12.00'},
+{name: 'Farfalle Pasta', image: farfallePasta, id: 'farfallePasta', details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean blandit purus nec mollis finibus. Aliquam vehicula sagittis quam, id tempor dui placerat in. In commodo metus vel sem faucibus volutpat. Donec a vulputate nunc, volutpat volutpat lacus. Praesent lobortis vehicula sapien vitae cursus. Donec ut quam sed enim pulvinar efficitur. Phasellus ut viverra arcu.', price: '$12.00'},
 {name: 'Spinach Feta Pinwheels', image: spinachFetaPinwheels, id: 'spinachFetaPinwheels', details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean blandit purus nec mollis finibus. Aliquam vehicula sagittis quam, id tempor dui placerat in. In commodo metus vel sem faucibus volutpat. Donec a vulputate nunc, volutpat volutpat lacus. Praesent lobortis vehicula sapien vitae cursus. Donec ut quam sed enim pulvinar efficitur. Phasellus ut viverra arcu.', price: '$12.99'},
 ];
 

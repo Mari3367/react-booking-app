@@ -16,7 +16,7 @@ export default function Footer() {
           <li><Link to='/about'>About</Link></li>
           <li><Link to='/menu'>Menu</Link></li>
           <li><Link to='/reservations'>Reservations</Link></li>
-          <li><a href='#'>Order Online</a></li>
+          <li><Link to='/order'>Order Online</Link></li>
           <li><a href='#'>Login</a></li>
         </ul>
       </div>

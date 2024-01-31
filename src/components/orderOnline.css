@@ -1,0 +1,64 @@
+section.menu-items-container {
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-items-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 20rem);
+    margin-top: 4rem;
+    justify-items: center;
+    gap: 3rem;
+}
+
+
+.menuItem {
+    color: var(--primary-green);
+    font-family: 'Markazi Text', serif;
+}
+
+.search-wrapper {
+    display: flex;
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#search {
+    width: 50rem;
+    height: 3rem;
+    border: 2px solid var(--primary-green);
+    border-radius: .5rem;
+    padding: 1rem;
+    position: relative;
+    padding-right: 5rem;
+}
+
+
+.menu-item-img {
+    height: 20rem;
+    width: 20rem;
+    object-fit: cover;
+}
+
+.menuItem h1 {
+    text-align: center;
+}
+
+
+.search-icon {
+    height: 1.4rem;
+    margin-left: -3rem;
+    z-index: 2;
+    background-color: var(--primary-green);
+    padding: .8rem;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+
+}
+
+.search-icon path {
+    fill: white;
+}
