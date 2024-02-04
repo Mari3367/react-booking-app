@@ -1,0 +1,78 @@
+.login-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: var(--secondary-pale-gray);
+    padding: 2rem;
+    border-radius: .5rem;
+    margin-top: 5rem;
+}
+
+.login-form input {
+    height: 2.5rem;
+    width: 20rem;
+    border: 2px solid var(--primary-green);
+    border-radius: 5px;
+    padding: 0 1rem;
+}
+
+
+.login-heading {
+    color: var(--primary-green);
+    margin: 0;
+    padding: 0;
+    font-family: 'Markazi Text', serif;
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.signin-btn {
+    height: 2.5rem;
+    width: 10rem;
+    font-weight: 600;
+    font-family: 'Karla', sans-serif;
+    background-color: var(--primary-yellow);
+    border: none;
+    border-radius: .4rem;
+    transition: background-color 300ms;
+}
+
+.signin-btn:hover {
+    background-color: var(--secondary-orange);
+    color: white;
+}
+
+/*---TABLET---*/
+@media screen and (min-width: 631px) and (max-width: 1150px) {
+    .login-form input {
+        width: 18rem;
+    }
+}
+
+/*---MOBILE---*/
+
+@media screen and (min-width:260px) and (max-width: 630px){
+    .login-form input {
+        width: 12rem;
+    }
+
+    .login-form {
+        padding: 0.5rem;
+        margin-top: 0;
+
+    }
+
+    .login-wrapper {
+        justify-content: center;
+    }
+}

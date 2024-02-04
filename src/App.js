@@ -1,5 +1,6 @@
 import './App.css';
 import {Routes, Route} from 'react-router-dom';
+import AuthProvider from './context/AuthContext';
 import Nav from './components/Nav';
 import Main from './components/Main';
 import Footer from './components/Footer';
@@ -12,25 +13,29 @@ import Salads from './components/Salads';
 import Dishes from './components/Dishes';
 import Wines from './components/Wines';
 import OrderOnline from './components/OrderOnline';
+import Login from './components/Login';
 
 function App() {
   return (
-    <>
-    <MobileNav />
-    <Nav />
-    <Routes>
-      <Route path='/' element={ <Main />}></Route>
-      <Route path='/reservations' element={<Booking />}></Route>
-      <Route path='/confirmed' element={<ConfirmedBooking />}></Route>
-      <Route path='/about' element={<About />}></Route>
-      <Route path='/menu' element={<Menu />}></Route>
-      <Route path='/menu/salads' element={<Salads />}></Route>
-      <Route path='/menu/dishes' element={<Dishes />}></Route>
-      <Route path='/menu/wines' element={<Wines />}></Route>
-      <Route path='/order' element={<OrderOnline />}></Route>
-    </Routes>
-    <Footer />
-    </>
+    <AuthProvider>
+  
+      <MobileNav />
+      <Nav />
+      <Routes>
+        <Route path='/' element={ <Main />}></Route>
+        <Route path='/reservations' element={<Booking />}></Route>
+        <Route path='/confirmed' element={<ConfirmedBooking />}></Route>
+        <Route path='/about' element={<About />}></Route>
+        <Route path='/menu' element={<Menu />}></Route>
+        <Route path='/menu/salads' element={<Salads />}></Route>
+        <Route path='/menu/dishes' element={<Dishes />}></Route>
+        <Route path='/menu/wines' element={<Wines />}></Route>
+        <Route path='/order' element={<OrderOnline />}></Route>
+        <Route path='/login' element={<Login />}></Route>
+      </Routes>
+      <Footer />
+
+    </AuthProvider>
   );
 }
 
