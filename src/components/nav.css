@@ -46,6 +46,22 @@ nav.main-nav {
     display: none;
   }
 
+  .logout-btn {
+    background-color: unset;
+    border: unset;
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 150ms;
+  }
+
+  .logout-btn:hover {
+    color: var(--primary-yellow);
+  }
+
   /*---MOBILE---*/
 @media screen and (min-width:260px) and (max-width: 640px){
     nav.main-nav .logo {

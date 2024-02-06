@@ -38,9 +38,32 @@ footer {
   footer .footer-title, a {
     color: white;
     text-decoration: none;
+    font-family: 'Karla', sans-serif;
+    transition: color 150ms;
+  }
+
+  footer a {
+    font-size: 15px;
   }
 
   footer a:hover {
+    color: var(--primary-yellow);
+  }
+
+  .logout-btn-footer {
+    color: white;
+    background-color: unset;
+    border: unset;
+    font-family: 'Karla', sans-serif;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    font-weight: lighter;
+    cursor: pointer;
+    transition: color 150ms;
+  }
+
+  .logout-btn-footer:hover {
     color: var(--primary-yellow);
   }
 
