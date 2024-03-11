@@ -14,6 +14,7 @@ import Dishes from './components/Dishes';
 import Wines from './components/Wines';
 import OrderOnline from './components/OrderOnline';
 import Login from './components/Login';
+import Cart from './components/Cart';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path='/menu/wines' element={<Wines />}></Route>
         <Route path='/order' element={<OrderOnline />}></Route>
         <Route path='/login' element={<Login />}></Route>
+        <Route path='/cart' element={<Cart />}></Route>
       </Routes>
       <Footer />
 

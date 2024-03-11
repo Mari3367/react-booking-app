@@ -4,7 +4,7 @@ import { useAuth } from '../context/AuthContext';
  import Main from './Main';
 
 export default function Login() {
-  const userName = useRef();
+  const userName = useRef(null);
   const { isLoggedIn,
       setIsLoggedIn,
       user,
