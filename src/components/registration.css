@@ -1,0 +1,20 @@
+.registration-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 100vh;
+}
+
+@media screen and (min-width: 631px) and (max-width: 1150px) {
+    .registration-container {
+        margin-top: 1.5rem;
+    }
+}
+
+@media screen and (min-width:260px) and (max-width: 630px){
+    .registration-container {
+        margin-top: 2rem;
+        align-items: center;
+    }
+
+}

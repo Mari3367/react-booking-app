@@ -79,7 +79,7 @@ export default function Nav() {
 
   return (
     <nav className='main-nav'>
-      <img src={logo} alt='little lemon logo' className='logo'/>
+      <Link to='/'><img src={logo} alt='little lemon logo' className='logo'/></Link>
       <ul>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/about'>About</Link></li>

@@ -52,6 +52,10 @@
     color: white;
 }
 
+.account-create > * {
+    color: rgb(63, 82, 185);
+}
+
 /*---TABLET---*/
 @media screen and (min-width: 631px) and (max-width: 1150px) {
     .login-form input {

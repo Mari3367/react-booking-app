@@ -15,6 +15,7 @@ import Wines from './components/Wines';
 import OrderOnline from './components/OrderOnline';
 import Login from './components/Login';
 import Cart from './components/Cart';
+import { Registration } from './components/Registration';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route path='/order' element={<OrderOnline />}></Route>
         <Route path='/login' element={<Login />}></Route>
         <Route path='/cart' element={<Cart />}></Route>
+        <Route path='/login/registration' element={<Registration />}></Route>
       </Routes>
       <Footer />
 
