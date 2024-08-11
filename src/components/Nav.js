@@ -53,11 +53,11 @@ export default function Nav() {
 
       if(active) {
         const mobileNav = document.querySelector('.mobile-nav');
-      mobileNav.style.display = 'grid';
-      const menuIcon = document.querySelector('.mobile-menu');
-      menuIcon.style.display = 'none';
-      const closeBtn = document.querySelector('.close');
-      closeBtn.style.display = 'block';
+        mobileNav.style.display = 'grid';
+        const menuIcon = document.querySelector('.mobile-menu');
+        menuIcon.style.display = 'none';
+        const closeBtn = document.querySelector('.close');
+        closeBtn.style.display = 'block';
       }
 
   }
