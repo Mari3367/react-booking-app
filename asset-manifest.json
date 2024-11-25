@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-booking-app/static/css/main.00c933ae.css",
-    "main.js": "/react-booking-app/static/js/main.d9e35e56.js",
+    "main.js": "/react-booking-app/static/js/main.8118c039.js",
     "static/js/787.dca3c7cd.chunk.js": "/react-booking-app/static/js/787.dca3c7cd.chunk.js",
     "static/media/Mario and Adrian A.jpg": "/react-booking-app/static/media/Mario and Adrian A.7f44c6d6e341a27d14b3.jpg",
     "static/media/Mario and Adrian b.jpg": "/react-booking-app/static/media/Mario and Adrian b.6ba0e06bfa9c1ea75109.jpg",
@@ -41,11 +41,11 @@
     "index.html": "/react-booking-app/index.html",
     "static/media/icon-hamburger-menu.svg": "/react-booking-app/static/media/icon-hamburger-menu.0da6f67ced800ab909f63d5144de37ee.svg",
     "main.00c933ae.css.map": "/react-booking-app/static/css/main.00c933ae.css.map",
-    "main.d9e35e56.js.map": "/react-booking-app/static/js/main.d9e35e56.js.map",
+    "main.8118c039.js.map": "/react-booking-app/static/js/main.8118c039.js.map",
     "787.dca3c7cd.chunk.js.map": "/react-booking-app/static/js/787.dca3c7cd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.00c933ae.css",
-    "static/js/main.d9e35e56.js"
+    "static/js/main.8118c039.js"
   ]
 }
